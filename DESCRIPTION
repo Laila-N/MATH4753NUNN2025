@@ -11,3 +11,7 @@ LazyData: true
 RoxygenNote: 7.3.3
 URL: https://github.com/Laila-N/MATH4753NUNN2025
 BugReports: https://github.com/Laila-N/MATH4753NUNN2025/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
