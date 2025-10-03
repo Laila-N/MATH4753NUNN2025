@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(MATH4753NUNN2025)
 ```
 
-# Birthday Questions
+# Questions
 
 ## 1)
 ### Derivation
@@ -43,7 +43,7 @@ $$P(A) = 1- \frac{365 \times 364 \times ... \times(365-n+1)}{365^n}$$
 ## 2)
 ### Reformulation
 
-The numerator for $P(A^C)$ shows traits of a factorial
+From the numerator of $P(A^C)$.
 $$365 \times 364 \times ... \times(365-n+1)$$
 
 $$^{365}P_n = n! {}^{365}C_n$$
@@ -52,7 +52,7 @@ $$P(A^c) = \frac{{}^{365}P_n }{365^n} $$
 
 
 $$\begin{aligned} 
-logP(A^C) &= log{}^{{}^{365}P}n - nlog365 \\ &= log(n!) + lchoose(365,n) - nlog(365) \\ &= lfactorial(n) +lchoose(365, n) - nlog(365)
+logP(A^C) &= log{}^{{}^{365}}P_n - nlog365 \\ &= log(n!) + lchoose(365,n) - nlog(365) \\ &= lfactorial(n) +lchoose(365, n) - nlog(365)
 \end{aligned}$$
 
 
