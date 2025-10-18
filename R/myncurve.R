@@ -5,7 +5,8 @@
 #' @param sigma sd
 #'
 #' @returns plot of normal distribution w/ shaded area of P(X<=a) and displays the probability in the command line
-#' @importFrom graphics curve polygon stats dnorm pnorm
+#' @importFrom graphics curve polygon
+#' @importFrom stats dnorm pnorm
 #'
 #' @export
 #'
