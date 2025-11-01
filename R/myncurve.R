@@ -11,6 +11,7 @@
 #' @export
 #'
 #' @examples myncurve(10,10,4)
+utils::globalVariables(c("x"))
 myncurve = function(a, mu, sigma){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu+3*sigma))
   xcurve <- seq(mu-3*sigma, a, length=2000)
