@@ -1,6 +1,7 @@
 #' SHINY MLE
 #'
 #' @returns shiny app
+#' @importFrom shiny runApp
 #' @export
 #'
 #' @examples
