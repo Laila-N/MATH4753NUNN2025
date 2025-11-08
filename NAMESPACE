@@ -2,6 +2,7 @@
 
 export(birthday)
 export(mybin)
+export(myclt)
 export(myfirstfunction)
 export(myfun)
 export(mysum)
