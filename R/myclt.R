@@ -3,7 +3,7 @@
 #' @param n size of sample
 #' @param iter iterations
 #'
-#' @returns a histogram of the CLT uniform
+#' @returns a histogram of the CLT uniform with every w value
 #' @importFrom stats runif
 #' @export
 #'
