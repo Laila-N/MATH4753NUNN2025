@@ -12,7 +12,7 @@ myclt(n, iter)
 \item{iter}{iterations}
 }
 \value{
-a histogram of the CLT uniform
+a histogram of the CLT uniform with every w value
 }
 \description{
 My Central Limit Theorem (CLT) Uniform Function
