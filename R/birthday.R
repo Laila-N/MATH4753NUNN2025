@@ -2,7 +2,7 @@
 #'
 #' @param x class size
 #'
-#' @returns probability of people with the same bdays from a class w/ x amnt of students
+#' @returns probability of people with the same bdays from a class w/ x amount of students
 #' @export
 #'
 #' @examples

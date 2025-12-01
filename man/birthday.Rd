@@ -10,7 +10,7 @@ birthday(x)
 \item{x}{class size}
 }
 \value{
-probability of people with the same bdays from a class w/ x amnt of students
+probability of people with the same bdays from a class w/ x amount of students
 }
 \description{
 Birthday function

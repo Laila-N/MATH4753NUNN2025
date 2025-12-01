@@ -1,18 +1,17 @@
 #' DDT Fish in Tennessee River
 #'
-#' A subset of data from the World Health Organization Global Tuberculosis
-#' Report ...
+#' Characteristics of Contaminated Fish in the Tennessee River
 #'
 #' @format ## `ddt`
 #' A data frame with 7,240 rows and 60 columns:
 #' \describe{
-#'   \item{RIVER}{River type}
-#'   \item{MILE}{number}
+#'   \item{RIVER}{River found}
+#'   \item{MILE}{distance in miles}
 #'   \item{SPECIES}{fish name}
-#'   \item{LENGTH}{lrngth in cm}
-#'   \item{WEIGHT}{number}
-#'   \item{DDT}{number}
+#'   \item{LENGTH}{length of fish in cm}
+#'   \item{WEIGHT}{weight of fish in grams}
+#'   \item{DDT}{parts per million}
 #'   ...
 #' }
-#' @source MS
+#' @source Statistics for Engineering and the Sciences, Sixth Edition (MS)
 "ddt"
