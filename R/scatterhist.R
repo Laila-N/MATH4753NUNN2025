@@ -24,8 +24,8 @@ scatterhist = function(x, y, xlab='', ylab='') {
   par(mar=c(3,0,1,1))
   barplot(yhist$counts, axes=FALSE, xlim=c(0, top), space=0, horiz=TRUE)
   par(oma=c(3,3,0,0))
-  mtext(xlab, side=1, line=1, outer=TRUE, adj=0,
+  mtext(xlab, side=1, line=2, outer=TRUE, adj=0,
         at=.8 * (mean(x) - min(x))/(max(x)-min(x)))
-  mtext(ylab, side=2, line=1, outer=TRUE, adj=0,
+  mtext(ylab, side=2, line=2, outer=TRUE, adj=0,
         at=(.8 * (mean(y) - min(y))/(max(y) - min(y))))
 }

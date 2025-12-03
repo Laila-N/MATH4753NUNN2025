@@ -1,0 +1,61 @@
+---
+title: "Package Description"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Package Description}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", 
+  fig.width = 6, 
+  fig.height = 6
+)
+```
+
+```{r setup}
+library(MATH4753NUNN2025)
+```
+
+# Explaination of Package
+This package is a collection of functions made over the Fall 2025 semester. This package also contains data from other sources and vignettes for other functions. 
+
+## mybin()
+This function will make a barplot of the amount of times a number shows up over a certain amount of iterations and show a table for the amount of successes. We will look at 100 iterations for a population of size (n) 10 and find the probability of 70%.
+
+```{r}
+mybin(iter=100,n = 10,p = 0.7)
+```
+
+Looking at the table, we can see that 7 shows up the most. The same is shown on the plot. 
+
+## scatterhist()
+This function displays a scatter plot of x variables vs y variables with the outer edges displaying histograms in relation with the scatter plot data. For this example, we are using data under the name ddt which is also in this package. We are plotting the weight and length of the fish.
+
+```{r}
+with(ddt, scatterhist(x = WEIGHT, y = LENGTH, xlab = 'WEIGHT', ylab = 'LENGTH'))
+```
+
+The plot displays a scatter plot and histograms of the data specified earlier. We can see that the majority of the data lies around 1000 for weight and 45 for length because of the grouping in the scatter plot and the height of the histograms on the sides.
+
+## birthday()
+This function is used to find the probability of people with the same birthday from a class with a number (x) amount of students. This function uses a class size of 20.
+
+```{r}
+birthday(20)
+```
+
+The result shows that the probability of people with the same birthday from a class of 20 is about 0.4 (or 40%).
+
+## myboot2()
+This function returns a bootstrap distribution with a confidence interval as a histogram. In the code, we set up a sample to be in place with x. When using the function, we asked for 10000 iterations, made alpha 0.2, and used the mean function.
+
+```{r}
+sam=rnorm(25,mean=25,sd=10)
+myboot2(iter=10000, x=sam, fun='mean', alpha=0.2)
+```
+
+This output is showing a histogram of the sample. The red numbers represents the 80% confidence interval when the sample goes through the mean function. The number in black is the sample mean of the data.
